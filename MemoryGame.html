@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="landing-page" class="landing-page">
+            <h1>Memory Match</h1>
+            <p>Select a category to start the game!</p>
+            
+            <div class="category-container">
+                <button class="category-btn" data-category="fruits">
+                    <span class="icon">🍎</span>
+                    Fruits
+                </button>
+                <button class="category-btn" data-category="emojis">
+                    <span class="icon">😀</span>
+                    Emojis
+                </button>
+                <button class="category-btn" data-category="animals">
+                    <span class="icon">🐶</span>
+                    Animals
+                </button>
+                <button class="category-btn" data-category="planets">
+                    <span class="icon">🪐</span>
+                    Planets
+                </button>
+                <button class="category-btn" data-category="flags">
+                    <span class="icon">🏳️</span>
+                    Flags
+                </button>
+                <button class="category-btn" data-category="Food">
+                    <span class="icon">🍽️</span>
+                    Foods
+                </button>
+            </div>
+            
+            <div class="difficulty-select">
+                <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+            </div>
+        </div>
+        <div id="game-container" class="game-container">
+            <div class="game-header">
+                <button id="back-btn" class="back-btn">← Back</button>
+                <div class="game-stats">
+                    <span class="score">Score: <span id="score">0</span></span>
+                    <span class="timer">Time: <span id="timer">30</span>s</span>
+                </div>
+            </div>
+            <div id="cards-grid" class="cards-grid"></div>
+        </div>
+    </div>
+    <div id="message-container" class="message-container">
+        <div class="message-box">
+            <h2 id="message-title" class="message-title">Game Over</h2>
+            <p id="message-content" class="message-content">Your score: 0</p>
+            <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+            <button id="home-btn" class="btn btn-warning">Home</button>
+        </div>
+    </div>
+    <div id="sound-toggle" class="sound-toggle">🔊</div>
+
+    <script src="./page1.js"></script>
+</body>
+</html>
